@@ -2,12 +2,14 @@
 using DesignPatternsConsoleApp.Adapter_Pattern;
 using DesignPatternsConsoleApp.CQRS_Mediator_Pattern;
 using DesignPatternsConsoleApp.Decorator_Pattern;
+using DesignPatternsConsoleApp.Dependency_Injection;
 using DesignPatternsConsoleApp.FactoryPattern;
 using DesignPatternsConsoleApp.Observer_Pub_Sub_Pattern;
 using DesignPatternsConsoleApp.Repository_Pattern;
 using DesignPatternsConsoleApp.SingletonPattern;
 using DesignPatternsConsoleApp.StrategyPattern;
 using MediatR;
+using Microsoft.Extensions.DependencyInjection;
 
 Console.WriteLine("Hello, World!");
 
@@ -45,6 +47,14 @@ stock.Notify();
 //Repository Pattern
 //var repo = new ProductRepository(context);
 //await repo.AddAsync(new Product { Name = "Laptop" });
+
+//Dependency Injection
+//var services = new ServiceCollection();
+//services.AddSingleton<IMessageService, EmailService>();
+
+//var provider = services.BuildServiceProvider();
+//var svc = provider.GetRequiredService<IMessageService>();
+//svc.Send("Hello!");
 
 
 //CQRS + Mediator Pattern
