@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DesignPatternsConsoleApp.Repository_Pattern
+{
+    //Repository Interface
+    public interface IProductRepository
+    {
+        //Task<Product?> GetByIdAsync(int id);
+        //Task AddAsync(Product product);
+    }
+
+}

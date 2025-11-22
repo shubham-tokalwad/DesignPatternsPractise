@@ -4,6 +4,7 @@ using DesignPatternsConsoleApp.CQRS_Mediator_Pattern;
 using DesignPatternsConsoleApp.Decorator_Pattern;
 using DesignPatternsConsoleApp.FactoryPattern;
 using DesignPatternsConsoleApp.Observer_Pub_Sub_Pattern;
+using DesignPatternsConsoleApp.Repository_Pattern;
 using DesignPatternsConsoleApp.SingletonPattern;
 using DesignPatternsConsoleApp.StrategyPattern;
 using MediatR;
@@ -40,6 +41,10 @@ notifier.Send("Hello World");
 var stock = new Stock();
 stock.Register(new Investor());
 stock.Notify();
+
+//Repository Pattern
+//var repo = new ProductRepository(context);
+//await repo.AddAsync(new Product { Name = "Laptop" });
 
 
 //CQRS + Mediator Pattern
